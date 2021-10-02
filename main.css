@@ -9,6 +9,49 @@ body{
   margin:0;
 }
 
+#resaltar{
+  position: relative;
+  /* text-emphasis-color: #555; */
+  /* background-color: #46C6C6; */
+  /* padding: 4px; */
+  /* margin: -4px; */
+}
+
+#resaltar:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 105%;
+  height: 110%;
+  z-index: -1; /* Place the pseudo element right under the content */
+  /* top: -5px; */
+  left: -10px;
+  background: linear-gradient(to top,#46C6C6 100%, transparent 100%);
+  /* animation-delay: 700ms; */
+  animation-name: highlight;
+  animation-duration: 0.75s;
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; Make the animation run back and forth */
+}
+
+@keyframes highlight {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+
+  50% {
+    width: 0;
+    opacity: 0;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+
+}
+
 nav{
   width: 100%;
   position: absolute;
