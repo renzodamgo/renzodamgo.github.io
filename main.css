@@ -1,0 +1,202 @@
+/* media query */
+html{
+  font-family: 'Noto Sans Display', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  margin:0;
+}
+
+nav{
+  width: 100%;
+  position: absolute;
+  backdrop-filter: blur(3px);
+  border:none;
+}
+
+img{
+  width: 70%;
+}
+
+#nav-container{
+  display:flex;
+/*   width:600px; */
+  justify-content: space-around;
+  margin: auto;
+  font-weight: 200;
+}
+
+nav ul{padding:0;}
+
+nav ul li{
+  list-style: none;
+  font-size: 20px;
+  padding:10px;
+}
+
+nav a{
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  
+  color: black;
+  text-decoration:none;
+  transition-duration: 200ms;
+}
+
+
+nav a:hover::after,
+nav a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #46C6C6;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+
+#nav-container ul{
+  display: flex;
+}
+
+#welcome-section{
+  display:flex;
+  justify-content: center;
+  
+  flex-direction:column;
+/*   align-items:center; */
+  height: 100vh;
+  max-width: 1400px;
+  margin:auto;
+}
+
+#welcome-container{
+  line-height: 1.2;
+  max-width: 600px;
+  padding-bottom: 30px;
+}
+
+.links a{
+  color:#46C6C6;
+  padding-right: 20px;
+}
+
+.links a:hover{
+  color:#46C6C6;
+  padding-right: 20px;
+}
+
+h2{
+  font-size: 16px;
+  color: #46C6C6;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container{
+  max-width: 1400px;
+  margin:auto;
+  padding-bottom:20px;
+}
+
+.background-container{
+  line-height: 1.5;
+  display:flex;
+  justify-content:flex-end;
+}
+
+.description{
+  width:100%;
+  max-width: 700px;
+/*   margin-top:5px; */
+  padding-left:80px;
+}
+
+h1{
+  font-weight: 600;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+p{
+  font-weight: 200;
+  
+}
+
+.skills-section h3{
+  font-weight: 200;
+  margin-top: 13px;
+  
+}
+
+.skills-description{
+/*   margin-top:2px; */
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li{
+  list-style: none;
+  padding-left: 0;
+  font-weight: 200;
+  padding-bottom: 4px;
+}
+
+ul{
+  padding-left: 0;
+}
+
+.experience-description{
+  font-weight: 200;
+  
+}
+
+h3{
+  font-size: 16px;
+}
+
+.place-date{
+  display:flex;
+  justify-content: space-between;
+}
+
+.place-date p, h3{
+  margin-bottom: 0px;
+  
+}
+
+.place-job{
+   margin-top: 5px;
+}
+
+.des-img{
+  display:flex;
+}
+
+footer{
+  display:flex;
+  
+  width:100%;
+}
+
+p a{
+  color:#46C6C6;
+  text-decoration: none;
+}
+
+.emoji{
+  margin-right: 10px;
+}
