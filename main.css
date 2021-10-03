@@ -1,4 +1,9 @@
 /* media query */
+
+:root {
+  --accent-color: #46C6C6;
+}
+
 html{
   font-family: 'Noto Sans Display', sans-serif;
   scroll-behavior: smooth;
@@ -26,7 +31,7 @@ body{
   z-index: -1; /* Place the pseudo element right under the content */
   /* top: -5px; */
   left: -10px;
-  background: linear-gradient(to top,#46C6C6 100%, transparent 100%);
+  background: linear-gradient(to top,var(--accent-color) 100%, transparent 100%);
   /* animation-delay: 700ms; */
   animation-name: highlight;
   animation-duration: 0.75s;
@@ -104,7 +109,7 @@ nav a::after {
   left: 0;
   width: 100%;
   height: 0.1em;
-  background-color: #46C6C6;
+  background-color: var(--accent-color);
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
 }
@@ -134,18 +139,18 @@ nav a::after {
 }
 
 .links a{
-  color:#46C6C6;
+  color:var(--accent-color);
   padding-right: 20px;
 }
 
 .links a:hover{
-  color:#46C6C6;
+  color:var(--accent-color);
   padding-right: 20px;
 }
 
 h2{
   font-size: 16px;
-  color: #46C6C6;
+  color: var(--accent-color);
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -248,12 +253,33 @@ footer{
 }
 
 p a{
-  color:#46C6C6;
+  color:var(--accent-color);
   text-decoration: none;
 }
 
 .emoji{
   margin-right: 10px;
+}
+
+.tag{
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 200;
+  color:  var(--accent-color);
+  border: 2px solid  var(--accent-color);
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 20px;
+  padding: 2px 4px;
+  transition          : all 0.2s ease-in-out; 
+  -o-transition       : all 0.2s ease-in-out;
+  -moz-transition     : all 0.2s ease-in-out;
+  -webkit-transition  : all 0.2s ease-in-out;
+}
+
+.tag:hover{
+  color: white;
+  background-color:  var(--accent-color);
 }
 
 
