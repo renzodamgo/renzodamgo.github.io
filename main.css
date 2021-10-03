@@ -248,7 +248,7 @@ h3{
 
 footer{
   display:flex;
-  
+  padding-top: 40px;
   width:100%;
 }
 
